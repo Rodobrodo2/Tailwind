@@ -5,15 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina con Container Centrale</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Aggiungi il colore personalizzato e le nuove dimensioni di spacing */
+        @layer base {
+            /* Nuovo colore personalizzato */
+            :root {
+                --custom-color: #3498db; /* Colore blu personalizzato */
+            }
+
+            /* Nuove dimensioni personalizzate per spacing */
+            .m-72 {
+                margin: 18rem; /* 288px */
+            }
+
+            .p-72 {
+                padding: 18rem; /* 288px */
+            }
+
+            .m-96 {
+                margin: 24rem; /* 384px */
+            }
+
+            .p-96 {
+                padding: 24rem; /* 384px */
+            }
+
+            /* Crea una classe che usa il colore personalizzato */
+            .text-custom {
+                color: var(--custom-color);
+            }
+
+            .bg-custom {
+                background-color: var(--custom-color);
+            }
+        }
+    </style>
 </head>
 <body class="bg-gray-100">
 
     <!-- Container centrale -->
     <div class="container mx-auto px-4 py-8">
-        <div class="bg-white rounded-lg shadow-lg p-6">
+        <div class="bg-custom rounded-lg shadow-lg p-6">
             <h1 class="text-3xl font-bold text-center text-gray-800">Benvenuto nella pagina centrale!</h1>
             <p class="mt-4 text-lg text-gray-700">Questo è un esempio di una pagina con un contenitore centrale utilizzando Tailwind CSS. Puoi aggiungere ulteriori contenuti qui dentro.</p>
         </div>
+    </div>
+    <div class="bg-white text-custom rounded-lg p-96 m-96 mt-12">
+        <p class="text-center text-xl">Questo box ha margini e padding molto grandi, rispettivamente di 24rem (384px), con un colore di sfondo personalizzato blu.</p>
     </div>
 
 </body>
