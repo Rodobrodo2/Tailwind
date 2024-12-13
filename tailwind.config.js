@@ -4,9 +4,15 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        divContainer: '#78716c',
         primary: '#1e293b', // Blu scuro personalizzato
         secondary: '#fbbf24', // Giallo dorato
         accent: '#34d399', // Verde per elementi di accento
+        primary2: "#4CAF50",      // Verde per i titoli principali
+        secondary2: "#FF9800",   // Arancione per i titoli secondari
+        paragraph: "#333333",   // Grigio scuro per i paragrafi
+        link: "#2196F3",        // Blu per i link
+        "link-hover": "#1976D2" // Blu scuro per hover sui link
       },
       fontFamily: {
         custom: ['"Open Sans"', 'sans-serif'], // Font personalizzato
